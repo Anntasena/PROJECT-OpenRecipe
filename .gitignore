@@ -1,0 +1,19 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Log files
+*.log
+
+# Temp files
+*.tmp
+*.temp
+
+# Dist and Build folders
+dist/
+build/
+.parcel-cache/
+
+# Ignore Project-Planing folder
+Project-Planing
