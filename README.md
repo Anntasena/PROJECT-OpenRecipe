@@ -49,15 +49,15 @@ Berikut adalah langkah-langkah untuk memulai proyek ini di lingkungan lokal Anda
 ### 📄 Project Structure
 
 
-├── src/
-│   ├── img/                 # Gambar dan ikon
-│   ├── js/                  # Script JavaScript
-│   │   ├── model.js         # Pengolahan data dan state aplikasi
-│   │   ├── view/            # Komponen tampilan
-│   └── scss/                # File SASS untuk styling
-├── index.html               # File HTML utama
-├── package.json             # File konfigurasi dependencies
-└── README.md                # Dokumentasi proyek
+-├── src/
+-│   ├── img/                 # Gambar dan ikon
+-│   ├── js/                  # Script JavaScript
+-│   │   ├── model.js         # Pengolahan data dan state aplikasi
+-│   │   ├── view/            # Komponen tampilan
+-│   └── scss/                # File SASS untuk styling
+-├── index.html               # File HTML utama
+-├── package.json             # File konfigurasi dependencies
+-└── README.md                # Dokumentasi proyek
 
 
 
