@@ -1,0 +1,119 @@
+MVC (model view controller) ARCHITECTURE 
+
+Arsitektur MVC (Model-View-Controller) adalah pola desain perangkat lunak yang memisahkan aplikasi menjadi tiga komponen utama: Model, View, dan Controller. Ini dirancang untuk memisahkan logika bisnis dari presentasi antarmuka pengguna, sehingga membuat aplikasi lebih terstruktur dan mudah dikelola. Berikut adalah penjelasan masing-masing komponen dalam arsitektur MVC:
+
+1. Model
+Tanggung Jawab: Model bertanggung jawab untuk menangani data dan logika bisnis dari aplikasi. Ini adalah lapisan yang berinteraksi dengan database atau sumber data lainnya, serta menyimpan, memproses, dan memvalidasi data.
+Contoh: Dalam aplikasi belanja online, model bisa berupa produk, pengguna, pesanan, dll. Model juga menangani operasi seperti membaca, menulis, memperbarui, atau menghapus data.
+Fungsi Utama:
+Mengambil dan memperbarui data dari database.
+Menerapkan logika bisnis seperti perhitungan, validasi, dan aturan.
+
+2. View
+Tanggung Jawab: View adalah bagian dari aplikasi yang bertanggung jawab untuk menyajikan data kepada pengguna. Ini adalah antarmuka pengguna (UI) yang menampilkan data yang dikendalikan oleh model.
+Contoh: Dalam aplikasi web, View biasanya adalah halaman HTML/CSS yang menampilkan data produk kepada pengguna.
+Fungsi Utama:
+Mengambil data dari Model dan menampilkannya kepada pengguna.
+Dapat berupa halaman web, form, tabel, atau visual lainnya.
+
+3. Controller
+Tanggung Jawab: Controller adalah penghubung antara Model dan View. Ini menerima input dari pengguna, memprosesnya (menggunakan Model), dan kemudian memperbarui View dengan data yang relevan.
+Contoh: Saat pengguna menekan tombol untuk menambahkan produk ke keranjang, Controller akan menerima permintaan ini, menggunakan Model untuk memperbarui data keranjang, dan kemudian memperbarui View untuk menunjukkan bahwa produk telah ditambahkan.
+Fungsi Utama:
+Mengambil input dari pengguna (melalui View).
+Memproses input tersebut menggunakan logika bisnis dari Model.
+Mengupdate View dengan data terbaru.
+
+Alur Kerja MVC:
+Pengguna berinteraksi dengan View: Misalnya, pengguna mengklik tombol atau mengisi form.
+View mengirim input ke Controller: Controller menerima input dari pengguna.
+Controller memproses input dengan Model: Controller mengambil data yang dibutuhkan dari Model atau melakukan aksi tertentu (misalnya, memperbarui data dalam Model).
+Model memperbarui data dan mengirimnya kembali ke Controller: Model melakukan operasi yang diminta dan mengembalikan hasilnya ke Controller.
+Controller memperbarui View: Controller mengambil data dari Model dan memperbarui View sehingga pengguna dapat melihat hasilnya.
+
+Keuntungan Arsitektur MVC:
+Pemisahan Tugas: Logika bisnis (Model) dipisahkan dari antarmuka pengguna (View), sehingga setiap bagian bisa dikelola dan dikembangkan secara independen.
+Pemeliharaan yang Lebih Mudah: Karena setiap komponen terpisah, pengembangan, pengujian, dan pemeliharaan menjadi lebih mudah dan terorganisir.
+Skalabilitas: Arsitektur ini membuat aplikasi lebih modular, sehingga memudahkan untuk menambah fitur baru atau memperluas fungsionalitas tanpa mengganggu bagian lainnya.
+
+Contoh Aplikasi MVC:
+Model: Berinteraksi dengan database untuk mengambil daftar produk.
+Controller: Menerima permintaan pengguna untuk melihat detail produk, mengambil data dari Model, dan mengirimkannya ke View.
+View: Menampilkan halaman detail produk kepada pengguna.
+
+Kesimpulan
+Arsitektur MVC adalah pola desain yang efisien untuk mengembangkan aplikasi yang terstruktur, terorganisir, dan mudah di-maintain. Dengan memisahkan logika aplikasi (Model), presentasi (View), dan pengelolaan input (Controller), arsitektur ini membantu menjaga kode lebih bersih dan dapat diandalkan.
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+Mengapa kita khawatir dengan architecture?
+
+ada 3 hal dalam architecure project:
+- structure 
+- maintainability
+- expandibility
+
+1. structure : seperti rumah software perlu strukture seperti mengatur kode kita
+2. maintainability : sebuah project tidak pernah selesai, kita ingin dapat dengan mudah menggantinya dimasa mendatang
+3. expandibility : kita ingin dengan mudah membuatnya berkemnbang seperti menambahkannya fitur
+
+jadi, architecture yang baik adalah yang mengandung ke3 hal tersebut
+
+ada beberapa architecture pattern dengan reputasi yang baik seperti :
+- MVC
+- MVP
+- Flux
+- dan lain lain
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+Komponen dari semua architecture terbagi menjadi berberapa bagian :
+- Bisnis logic
+- State
+- HTTP Library
+- Aplication Logic (Router)
+- Presentation Logic (UI layer)
+
+1. Bisnis logic
+-> kode yang memecahkan masalah bisnis sebenarnya
+-> Kode yang berhubungan langsung dengan apa yang dilakukan bisnis dan apa yang dibutuhkannya
+-> Contoh :
+    - Pengiriman pesan
+    - Menyimpan transaksi
+    - Penghitungan pajak
+    - dan lain2
+
+2. State
+-> State aplikasi pada dasarnya adalah menyimpan semua data tentang aplikasi yang berjalan di browser
+-> State harus menyimpan data apapun yang mungkin kita ambil dari API atau data yang di imput user atau sejenisnya
+-> UI seharusnya disimpan in sync dengan state
+-> Jika ada perubahan di UI, maka state juga harus berubah
+-> Menyimpan dan menampilkan data dan menjaga semuanya tetap sinkon adalah salah satu tugas tersulit saat membuat aplikasi
+-> Tetapi kita bisa menggunakan state Library sepeti:
+    - Redux
+    - MobX
+
+3. HTTP Library
+-> Bertanggugn jawab untuk membuat dan menerima AJAX (fetch function)
+-> Opsional tetapi hampir dan selalu digunakan di aplikasi real-world
+
+4. Aplication logic (Router)
+-> Kode yang hanya memperhatikan implementasi aplikasi itu sendiri, jadi lebih pada aspek teknik aplikasi, yang tidak terkait langsung dengan masalah bisnis yang mendasarinya
+-> Ini termasuk handling UI dan navigasi pada halaman
+-> Di sebut router karna pada dasarnya memetakan tindakan ke navigasi pengguna
+
+5. Presentation logic (UI Layer)
+-> Semua bagian aplikasi yang terlihat
+-> logika presentasi bertanggung jawab untuk menampilkan status aplikasi pada antar muka pengguna
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+The Model-View-Controller (MVC) architecture
+
+Model : Business logic, state
+
+Controller : Jembatan antara model dan view
+
+View : Presentation logic
