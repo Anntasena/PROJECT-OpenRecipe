@@ -48,6 +48,7 @@ Berikut adalah langkah-langkah untuk memulai proyek ini di lingkungan lokal Anda
 
 ### 📄 Project Structure
 
+```
 .
 ├── src/
 │   ├── img/                 # Gambar dan ikon
@@ -58,5 +59,4 @@ Berikut adalah langkah-langkah untuk memulai proyek ini di lingkungan lokal Anda
 ├── index.html               # File HTML utama
 ├── package.json             # File konfigurasi dependencies
 └── README.md                # Dokumentasi proyek
-
-
+```
