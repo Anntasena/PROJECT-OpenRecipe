@@ -1,48 +1,51 @@
-# 🍴 Forkify - Recipe Finder & Creator
+# 🍴 OpenRecipe - Recipe Finder & Creator
 
-![Forkify Preview Website](Project-Planing/forkify-preview-app.png)
+![OpenRecipe Preview Website](OpenRecipe_Preview2.png)
 
-Forkify adalah aplikasi web untuk mencari resep makanan, membuat resep sendiri, dan menyesuaikan bahan-bahan sesuai dengan porsi yang diinginkan. Dengan Forkify, Anda bisa mengeksplorasi berbagai resep dari seluruh dunia, menyimpan favorit, hingga berbagi kreasi resep pribadi.
+OpenRecipe is a web application for finding food recipes, creating your own recipes, and adjusting ingredients according to desired portions. With OpenRecipe, you can explore various recipes from around the world, save favorites, and even share your personal recipe creations.
 
+## DEMO
+
+[OpenRecipe Website](https://project-openrecipe.netlify.app/)
 
 ---
 
-## ✨ Fitur Utama
+## ✨ Key Features
 
-- **Pencarian Resep**: Telusuri ribuan resep menggunakan API eksternal yang memberikan hasil cepat dan relevan.
-- **Membuat Resep Sendiri**: Ciptakan resep baru dan simpan di local storage untuk kemudahan akses di masa mendatang.
-- **Bookmark Resep Favorit**: Tandai resep favorit agar mudah ditemukan di lain waktu.
-- **Penyesuaian Porsi**: Sesuaikan jumlah porsi dan bahan akan otomatis diperbarui.
-- **Responsive & Cepat**: Dikembangkan dengan Parcel bundler untuk performa optimal dan pemuatan halaman yang cepat.
+- **Recipe Search**: Browse thousands of recipes using an external API that delivers fast and relevant results.
+- **Create Your Own Recipes**: Craft new recipes and save them in local storage for easy future access.
+- **Bookmark Favorite Recipes**: Mark your favorite recipes for quick retrieval later.
+- **Portion Adjustment**: Modify serving sizes and ingredients will update automatically.
+- **Responsive & Fast**: Built with Parcel bundler for optimal performance and quick page loading.
 
 ---
 
 ## 🛠️ Tech Stack
 
-Forkify dibangun dengan pendekatan arsitektur **MVC (Model-View-Controller)** untuk struktur kode yang bersih dan terstruktur. Berikut adalah teknologi utama yang digunakan:
+OpenRecipe is built using the **MVC (Model-View-Controller)** architecture for clean and structured code organization. Here are the core technologies used:
 
-- **JavaScript (ES6+)**: Bahasa utama untuk membangun logika aplikasi.
-- **Parcel Bundler**: Mempermudah proses development dan build production.
-- **SASS**: Menyediakan penulisan CSS yang terstruktur.
-- **Core-js & Regenerator-runtime**: Menjamin kompatibilitas di berbagai browser.
-- **Fractional.js**: Menampilkan jumlah bahan dalam bentuk pecahan yang mudah dipahami.
+- **JavaScript (ES6+)**: Primary language for application logic.
+- **Parcel Bundler**: Simplifies development and production build processes.
+- **SASS**: Provides structured CSS writing.
+- **Core-js & Regenerator-runtime**: Ensures cross-browser compatibility.
+- **Fractional.js**: Displays ingredient quantities in easy-to-understand fractions.
 
 ---
 
 ## 🚀 Getting Started
 
-Berikut adalah langkah-langkah untuk memulai proyek ini di lingkungan lokal Anda.
+Follow these steps to set up the project in your local environment.
 
 ### Prerequisites
 
-- **Node.js** (disarankan versi terbaru)
+- **Node.js** (latest version recommended)
 
 ### Installation
 
-1. **Clone Repository**: 
+1. **Clone Repository**:
    ```bash
    git clone https://github.com/Anntasena/PROJECT-forkify
-
+   ```
 
 ---
 
@@ -51,12 +54,12 @@ Berikut adalah langkah-langkah untuk memulai proyek ini di lingkungan lokal Anda
 ```
 .
 ├── src/
-│   ├── img/                 # Gambar dan ikon
-│   ├── js/                  # Script JavaScript
-│   │   ├── model.js         # Pengolahan data dan state aplikasi
-│   │   └── view/            # Komponen tampilan
-│   └── scss/                # File SASS untuk styling
-├── index.html               # File HTML utama
-├── package.json             # File konfigurasi dependencies
-└── README.md                # Dokumentasi proyek
+│   ├── img/                 # Images and icons
+│   ├── js/                  # JavaScript scripts
+│   │   ├── model.js         # Data processing and application state
+│   │   └── view/            # View components
+│   └── scss/                # SASS files for styling
+├── index.html               # Main HTML file
+├── package.json             # Dependencies configuration
+└── README.md                # Project documentation
 ```
