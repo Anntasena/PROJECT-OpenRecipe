@@ -1,6 +1,6 @@
 # 🍴 OpenRecipe - Recipe Finder & Creator
 
-![OpenRecipe Preview Website](OpenRecipe_Preview2.png)
+![OpenRecipe Preview Website](Project-Planing/OpenRecipe_Preview2.png)
 
 OpenRecipe is a web application for finding food recipes, creating your own recipes, and adjusting ingredients according to desired portions. With OpenRecipe, you can explore various recipes from around the world, save favorites, and even share your personal recipe creations.
 
