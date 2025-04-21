@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="src/sass/main.scss" />
     <script type="module" src="src/js/controller.js"></script>
 
-    <title>forkify // Search over 1,000,000 recipes</title>
+    <title>OpenRecipe // Search over 1,000,000 recipes</title>
   </head>
 
   <body>
@@ -263,42 +263,64 @@
         <div class="upload__column">
           <h3 class="upload__heading">Recipe data</h3>
           <label>Title</label>
-          <input value="TEST55" required name="title" type="text" />
+          <input placeholder="Insert title" required name="title" type="text" />
           <label>URL</label>
-          <input value="TEST55" required name="sourceUrl" type="text" />
+          <input
+            placeholder="Insert URL"
+            required
+            name="sourceUrl"
+            type="text"
+          />
           <label>Image URL</label>
-          <input value="TEST55" required name="image" type="text" />
+          <input
+            placeholder="Insert image title"
+            required
+            name="image"
+            type="text"
+          />
           <label>Publisher</label>
-          <input value="TEST55" required name="publisher" type="text" />
+          <input
+            placeholder="Insert publisher"
+            required
+            name="publisher"
+            type="text"
+          />
           <label>Prep time</label>
-          <input value="23" required name="cookingTime" type="number" />
+          <input
+            placeholder="Insert Prepartion time"
+            required
+            name="cookingTime"
+            type="number"
+          />
           <label>Servings</label>
-          <input value="23" required name="servings" type="number" />
+          <input
+            placeholder="Insert servings"
+            required
+            name="servings"
+            type="number"
+          />
         </div>
 
         <div class="upload__column">
           <h3 class="upload__heading">Ingredients</h3>
           <label>Ingredient 1</label>
           <input
-            value="0.5,kg,Rice"
             type="text"
             required
             name="ingredient-1"
-            placeholder="Format: 'Quantity,Unit,Description'"
+            placeholder="Example: '0.5,kg,Rice'"
           />
           <label>Ingredient 2</label>
           <input
-            value="1,,Avocado"
             type="text"
             name="ingredient-2"
-            placeholder="Format: 'Quantity,Unit,Description'"
+            placeholder="Example: '1,,Avocado'"
           />
           <label>Ingredient 3</label>
           <input
-            value=",,salt"
             type="text"
             name="ingredient-3"
-            placeholder="Format: 'Quantity,Unit,Description'"
+            placeholder="Example: ',,salt'"
           />
           <label>Ingredient 4</label>
           <input

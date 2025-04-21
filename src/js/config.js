@@ -7,3 +7,4 @@ export const MDOAL_CLOSE_SEC = 2.5;
 
 //# API WEBSITE
 // https://forkify-api.herokuapp.com/v2
+//https://forkify-api.jonas.io/api/v2/recipes
