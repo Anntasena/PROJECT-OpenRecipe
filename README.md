@@ -44,7 +44,7 @@ Follow these steps to set up the project in your local environment.
 
 1. **Clone Repository**:
    ```bash
-   git clone https://github.com/Anntasena/PROJECT-forkify
+   https://github.com/Anntasena/PROJECT-OpenRecipe.git
    ```
 
 ---
